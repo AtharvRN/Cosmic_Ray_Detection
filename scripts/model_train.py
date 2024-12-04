@@ -17,6 +17,7 @@ from torch.optim.lr_scheduler import ReduceLROnPlateau
 from deepCR.util import maskMetric
 from dataset_norm import dataset, DatasetSim
 from unet_model import WrappedModel, UNet_module
+from unet_vit import TUNet
 from vit_seg_modeling import VisionTransformer
 from vit_seg_configs import get_config
 # from dice_score import dice_score
@@ -106,7 +107,8 @@ class train:
             self.dint = torch.cuda.ByteTensor
             # self.network = nn.DataParallel(UNet_module(1,1,hidden, norm='group', norm_setting=[8,0,True], conv_type='unet', down_type='maxpool', up_type='transconv', att=False, deeper=True))
             config = get_config()
-            self.network = nn.DataParallel(VisionTransformer(config, img_size=256, num_classes=1, zero_head=False, vis=True))
+            # self.network = nn.DataParallel(VisionTransformer(config, img_size=256, num_classes=1, zero_head=False, vis=True))
+            self.network = nn.DataParallel(VisionTransformer(config, vis=True))
             num_params = sum(p.numel() for p in self.network.parameters() if p.requires_grad)
             print("Number of Parameters: ", num_params)
             self.network.type(self.dtype)

@@ -65,12 +65,9 @@ skys = np.load('C:/TransUNet/Attention-Augmented-Cosmic-Ray-Detection-in-Astrono
 s = np.arange(images.shape[0])
 np.random.shuffle(s)
 
-## Take only 100 images for training
-# images = images
-
-image = images[s][:1000]
-mask = masks[s][:1000]
-sky = skys[s][:1000]
+image = images[s]
+mask = masks[s]
+sky = skys[s]
 # Check for the type and shape of the train image and mask data
 print('\nType and shape of the train_image_data:')
 print(type(image))
