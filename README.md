@@ -14,6 +14,6 @@ python3 Train.py
 ## Results with different model hyparameters
 ![image](https://github.com/user-attachments/assets/d36ee9f8-3e8c-4554-be06-bce5e4909ba3)
 
-Code is not properly formatted. Reach out to .link-style1[[atharv.ramesh2003@gmail.com](mailto:atharv.ramesh2003@gmail.com)]
+Code is not properly formatted. Reach out to [[atharv.ramesh2003@gmail.com](mailto:atharv.ramesh2003@gmail.com)] in case you have any queries
 
 
