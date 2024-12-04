@@ -1,5 +1,5 @@
 # Cosmic_Ray_Detection
-Detection of Cosmic Ray Affected Pixels in Astronomical Images <br/>
+Detection of Cosmic Ray Affected Pixels in Astronomical Images  - Binary segmentation problem<br/>
 Existing work - [Cosmic Ray Rejection with Attention Augmented Deep Learning](https://arxiv.org/abs/2207.10411) <br/>
 Kindly refer to [presentation](reports/CR_DETECTION_FINAL_SMALL_TRANSUNET.pdf) for more details <br/>
 To train the model
